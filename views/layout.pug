@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Flash Cards 
+    body
+        include includes/header.pug
+        if name
+            h3 Welcome, #{name}!!!
+            form(action='/goodbye' method='post')
+                button(type='submit') Goodbye
+        block content
+        include includes/footer.pug
+        

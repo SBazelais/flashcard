@@ -1,0 +1,12 @@
+extends layout.pug
+block content
+    section#main
+        h2= text
+        if hint
+            p
+                i Hint: #{hint}
+        a(href=`${id}?side=${sideToshow}`)= sideToShowDisplay
+        br
+        a(href="/card") Next card
+       
+                  
